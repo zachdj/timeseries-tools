@@ -1,0 +1,7 @@
+name: timeseries-tools
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - python=3.6

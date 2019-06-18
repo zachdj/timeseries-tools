@@ -1,6 +1,21 @@
 # Time-series Tools
 Collection of handy tools for working with time-series data in Pandas dataframes.
 
+## Installation
+
+The tools depend on Pandas and NumPy. [Conda](https://docs.conda.io/en/latest/) can be used to create an environment with 
+all dependencies installed.  Just run
+
+```bash
+ $ conda env create -f environment.yml
+```
+
+Alternatively, dependencies can be installed from the requirements.txt file:
+
+```bash
+ $ pip3 install -r requirements.txt
+```
+
 ## Tools
 
 ### Persistence Models
@@ -35,4 +50,5 @@ For example, it cannot handle uneven sampling intervals, leave-one-out cross-val
 or imposing limits on the size of training data.
 Furthermore, `TimeSeriesSplit` exposes an index-based API designed to work with numpy ndarrays. 
 When working with time-series data, it is often more convenient to deal with a time-oriented API 
-rather than an index-oriented API. 
+rather than an index-oriented API.
+
